@@ -16,33 +16,49 @@ public class MapGenerator : MonoBehaviour
     [Space]
     public List<GameObject> rooms;
 
+
     private void Start()
     {
         StartCoroutine(GenerateRooms());
+
     }
 
+    //This is the main coroutine function that does most of the generating work:
     public IEnumerator GenerateRooms()
     {
         GenerateStartAndEnd();
-        for(int i = 0; i < maxRows; i++)
+        for(int i = 0; i < maxRows + 1; i++)
         {
-            StartCoroutine(GenerateColumnUpwards(new Vector2(i, 1), Random.Range(1, maxRows - 1)));
+            if (i != (maxRows))
+            {
+                StartCoroutine(GenerateColumnUpwards(new Vector2(i, 1), Random.Range(1, maxColumns - 1)));
+            }
+            else
+            {
+                //Generate the last column:
+                StartCoroutine(GenerateColumnUpwards(new Vector2(maxRows, 0), maxColumns));
+            }
             yield return new WaitForSeconds(0.3f);
         }
-        //Generate the last column:
-        StartCoroutine(GenerateColumnUpwards(new Vector2(maxRows, 0), maxColumns));
+
+        //Open the doors according to which rooms are adjacent to each room:
+        for(int i = 0; i < rooms.Count; i++)
+        {
+            rooms[i].GetComponent<Room>().OpenDoorsToAdjacentRooms();
+            yield return new WaitForSeconds(0.2f);
+        }
     }
 
     private void GenerateStartAndEnd()
     {
         GameObject startRoom = Instantiate(testRoomPrefab, transform, true);
         startRoom.transform.position = new Vector3(0, 0, 0);
-
+        
         rooms.Add(startRoom);
 
         GameObject endRoom = Instantiate(testRoomPrefab, transform, true);
-        startRoom.transform.position = new Vector3(maxRows, 0f, maxColumns) * roomLength;
-
+        endRoom.transform.position = new Vector3(maxRows, 0f, maxColumns) * roomLength;
+    
         rooms.Add(endRoom);
     }
 
@@ -53,36 +69,6 @@ public class MapGenerator : MonoBehaviour
         return newRoom;
     }
 
-    private void GenerateColumn(Vector2 startPos,int columnLength)
-    {
-        //Choose a direction, up or downwards generation:
-        if(Random.value >= 0.5f && (startPos.y + columnLength) <= maxColumns)
-        {
-            //Upwards generation
-            StartCoroutine(GenerateColumnUpwards(startPos, columnLength));
-        } 
-        else if(Random.value < 0.5f && (startPos.y - columnLength) >= 0)
-        {
-            //Downwards generation
-            StartCoroutine(GenerateColumnDownward(startPos, columnLength));
-        }
-    }
-
-    private IEnumerator GenerateColumnDownward(Vector2 startPos, int columnLength)
-    {
-        Vector2 spawnPos = startPos;
-
-        for(int i = 0; i < columnLength; i++)
-        {
-            GameObject newRoom = GenerateRoom(spawnPos);
-            rooms.Add(newRoom);
-            spawnPos.y--;
-
-            yield return new WaitForSeconds(0.1f);
-        }
-        
-    }
-
     private IEnumerator GenerateColumnUpwards(Vector2 startPos, int columnLength)
     {
         Vector2 spawnPos = startPos;
@@ -91,10 +77,12 @@ public class MapGenerator : MonoBehaviour
         {
             GameObject newRoom = GenerateRoom(spawnPos);
             rooms.Add(newRoom);
+
             spawnPos.y += 1;
 
             yield return new WaitForSeconds(0.1f);
         }
         
     }
+
 }

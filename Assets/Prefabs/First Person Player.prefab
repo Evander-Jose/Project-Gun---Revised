@@ -303,8 +303,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 2553962114692082191}
-  lookSensitivityX: 5
-  lookSensitivityY: 5
+  lookSensitivityX: 4.2
+  lookSensitivityY: 4.2
   maximumUpLookAngle: -100
   maximumDownLookAngle: 80
 --- !u!114 &2553962116084705830
@@ -329,4 +329,4 @@ MonoBehaviour:
   gravity: -90
   jumpHeight: 2
   jumpMultiplier: 0.74
-  jumpFallMultiplier: 1.2
+  jumpFallMultiplier: 1.43
