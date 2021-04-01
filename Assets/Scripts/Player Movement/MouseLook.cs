@@ -12,7 +12,8 @@ public class MouseLook : MonoBehaviour
     public float maximumUpLookAngle = 80;
     public float maximumDownLookAngle = 60;
     private const float multiplierConstant = 1000f;
-
+    [Space]
+    public Transform heldWeapon;
     float x_rotation = 0f;
 
     private void Start()
@@ -37,5 +38,6 @@ public class MouseLook : MonoBehaviour
         //Looking up and down, rotates the camera instead of the player himself:
         cameraTransform.localRotation = Quaternion.Euler(new Vector3(x_rotation, 0f, 0f));
 
+        heldWeapon.forward = cameraTransform.forward;
     }
 }
