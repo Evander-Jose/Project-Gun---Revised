@@ -90,6 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6390830047190808550}
+  - component: {fileID: 1833378210869251423}
   m_Layer: 0
   m_Name: basic handgun
   m_TagString: Untagged
@@ -104,7 +105,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6051459926642077020}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.7900006, y: -0.9100004, z: 1.6000015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -112,3 +113,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1833378210869251423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051459926642077020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11361b3cfee1eae4e90232452a515041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunSetting: {fileID: 11400000, guid: cf75f28a21c543f48b14c5beadc210c4, type: 2}
+  firstPersonCamera: {fileID: 0}
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
