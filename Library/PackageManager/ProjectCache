@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637527513538851277
+      ticks: 637529575707130040
     m_Hash: 2640938238
   m_LockFileStatus:
     m_FilePath: C:/Users/Hot Keys/Unity Projects/Project Gun/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637527525930864738
+      ticks: 637529575716426345
     m_Hash: 3926888806
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -534,6 +534,7 @@ m_PackageAssets:
         - 7.5.1
         - 7.5.2
         - 7.5.3
+        - 7.6.0
         - 8.0.1
         - 8.1.0
         - 8.2.0
@@ -2966,6 +2967,7 @@ m_PackageAssets:
         - 7.5.1
         - 7.5.2
         - 7.5.3
+        - 7.6.0
         - 8.0.1
         - 8.1.0
         - 8.2.0
@@ -3115,6 +3117,7 @@ m_PackageAssets:
         - 7.5.1
         - 7.5.2
         - 7.5.3
+        - 7.6.0
         - 8.0.1
         - 8.1.0
         - 8.2.0

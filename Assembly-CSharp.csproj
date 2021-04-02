@@ -57,18 +57,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\WeaponUser.cs" />
     <Compile Include="Assets\Scripts\Health System\Health.cs" />
     <Compile Include="Assets\Scripts\Map Generation\Room.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon.cs" />
     <Compile Include="Assets\Scripts\Player Movement\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\WeaponSwitching.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\PlayerWeaponControls.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Gun.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\GunSettings.cs" />
     <Compile Include="Assets\Scripts\Player Movement\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
-    <Compile Include="Assets\Scripts\Player Weapons System\GunSettings.cs" />
-    <Compile Include="Assets\Scripts\Player Weapons System\WeaponUser.cs" />
-    <Compile Include="Assets\Scripts\Player Weapons System\PlayerWeaponControls.cs" />
+    <Compile Include="Assets\Scripts\Enemy Script\SimpleEnemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
