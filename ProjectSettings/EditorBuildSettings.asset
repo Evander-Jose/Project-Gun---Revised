@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/test procedural generation.unity
+    guid: 5e413832e7f785045be0cee8b933ccd2
   m_configObjects: {}

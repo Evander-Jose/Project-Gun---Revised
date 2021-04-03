@@ -11,12 +11,30 @@ public class Room : MonoBehaviour
     [SerializeField] private GameObject eastDoor;
     public LayerMask groundLayerMask;
 
+    public bool inBattle = false;
+    private bool cleared = false;
+
+    private void OnEnable()
+    {
+        //Just to be extra extra safe.
+        inBattle = false;
+        cleared = false;
+    }
+
     public void OpenDoorsToAdjacentRooms()
     {
         StartCoroutine(OpenDoorsToAdjacentRooms(northDoor));
         StartCoroutine(OpenDoorsToAdjacentRooms(southDoor));
         StartCoroutine(OpenDoorsToAdjacentRooms(westDoor));
         StartCoroutine(OpenDoorsToAdjacentRooms(eastDoor));
+    }
+
+    public void CloseAllDoors()
+    {
+        northDoor.SetActive(true);
+        southDoor.SetActive(true);
+        westDoor.SetActive(true);
+        eastDoor.SetActive(true);
     }
 
     public IEnumerator OpenDoorsToAdjacentRooms(GameObject doorToCheckFrom)
@@ -33,4 +51,21 @@ public class Room : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
     }    
+
+    public void GoIntoBattleMode()
+    {
+        if(inBattle == true || cleared == true)
+        {
+            return;
+        }
+
+        inBattle = true;
+        CloseAllDoors();
+    }
+
+    public void MarkRoomAsCleared()
+    {
+        cleared = true;
+        OpenDoorsToAdjacentRooms();
+    }
 }

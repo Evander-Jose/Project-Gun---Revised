@@ -18,11 +18,6 @@ public class PlayerMovement : MonoBehaviour
     [Range(1f, 2f)] public float jumpFallMultiplier; //Falling from jump, gravity is multiplied by this
     private Vector3 velocity;
 
-    private float timeSinceLastJump = 0f;
-    private float lastJumpDuration = 0f;
-    private bool isJumping = false;
-    private float jumpVelocity = 0f;
-
     private float defaultGravity = 0f;
 
     private bool isGrounded = true;

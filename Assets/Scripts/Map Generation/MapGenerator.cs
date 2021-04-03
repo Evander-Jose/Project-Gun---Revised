@@ -11,8 +11,10 @@ public class MapGenerator : MonoBehaviour
     public int maxColumns = 8;
     [Space]
     public float roomLength = 50.3f;
-
+    [Space]
     public GameObject testRoomPrefab;
+    public GameObject startRoomPrefab;
+    public GameObject endRoomPrefab;
     [Space]
     public List<GameObject> rooms;
 
@@ -51,12 +53,12 @@ public class MapGenerator : MonoBehaviour
 
     private void GenerateStartAndEnd()
     {
-        GameObject startRoom = Instantiate(testRoomPrefab, transform, true);
+        GameObject startRoom = Instantiate(startRoomPrefab, transform, true);
         startRoom.transform.position = new Vector3(0, 0, 0);
         
         rooms.Add(startRoom);
 
-        GameObject endRoom = Instantiate(testRoomPrefab, transform, true);
+        GameObject endRoom = Instantiate(endRoomPrefab, transform, true);
         endRoom.transform.position = new Vector3(maxRows, 0f, maxColumns) * roomLength;
     
         rooms.Add(endRoom);
