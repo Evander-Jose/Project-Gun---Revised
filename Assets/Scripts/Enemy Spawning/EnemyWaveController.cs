@@ -42,6 +42,8 @@ public class EnemyWaveController : MonoBehaviour
 
     public void BeginBattle()
     {
+        if (battleEnded == true) return;
+
         currentWave = 0;
         ActivateWave(currentWave);
         battleOngoing = true;

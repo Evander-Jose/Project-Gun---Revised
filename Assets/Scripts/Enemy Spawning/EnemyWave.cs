@@ -12,7 +12,7 @@ public class EnemyWave : MonoBehaviour
         childEnemies.Clear();
         foreach(Transform t in transform)
         {
-            GameObject enemyComponent = t.GetComponent<GameObject>();
+            GameObject enemyComponent = t.gameObject;
             childEnemies.Add(enemyComponent);
             t.gameObject.SetActive(false);
         }

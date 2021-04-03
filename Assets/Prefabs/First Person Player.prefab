@@ -396,8 +396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c910a662caa874f488f6c662c9439724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
-  currentHealth: 20
+  maxHealth: 100
+  currentHealth: 100
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -745,7 +745,7 @@ PrefabInstance:
       objectReference: {fileID: 2553962114692082191}
     - target: {fileID: 3348093572738995589, guid: 4edb2261388060c4a895d10494c33592, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6051459926642077020, guid: 4edb2261388060c4a895d10494c33592, type: 3}
       propertyPath: m_Name
@@ -753,7 +753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6051459926642077020, guid: 4edb2261388060c4a895d10494c33592, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6390830047190808550, guid: 4edb2261388060c4a895d10494c33592, type: 3}
       propertyPath: m_RootOrder
@@ -826,7 +826,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 884619471771972448, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6142505417710567347, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}
       propertyPath: firstPersonCamera
@@ -838,7 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8199655626628910009, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8827292720454144259, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}
       propertyPath: m_RootOrder
