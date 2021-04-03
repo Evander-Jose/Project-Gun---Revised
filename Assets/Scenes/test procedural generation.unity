@@ -268,14 +268,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 404053456327091151, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 938910768727916945, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 2553962116084705828, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -323,14 +315,6 @@ PrefabInstance:
     - target: {fileID: 2553962116084705850, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
       propertyPath: m_Name
       value: First Person Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8109405949312268616, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8653305606213884694, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
-      propertyPath: m_Layer
-      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}

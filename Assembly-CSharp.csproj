@@ -62,18 +62,20 @@
     <Compile Include="Assets\Scripts\Map Generation\Room.cs" />
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\SimpleEnemy.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon.cs" />
+    <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWaveController.cs" />
     <Compile Include="Assets\Scripts\Player Movement\MouseLook.cs" />
+    <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWave.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\WeaponSwitching.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\PlayerWeaponControls.cs" />
+    <Compile Include="Assets\Scripts\TestSceneReloader.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Gun.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\GunSettings.cs" />
     <Compile Include="Assets\Scripts\Player Movement\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
-    <Compile Include="Assets\Scripts\TestSceneReloader.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWaveController.cs" />
-    <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWave.cs" />
+    <Compile Include="Assets\Scripts\Object Pooling\ObjectPoolClient.cs" />
+    <Compile Include="Assets\Scripts\Object Pooling\ObjectPoolCollection.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

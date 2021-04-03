@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Assault Rifle
   m_EditorClassIdentifier: 
   range: 42
-  damage: 3
-  fireRate: 9.88
+  damage: 100
+  fireRate: 12
