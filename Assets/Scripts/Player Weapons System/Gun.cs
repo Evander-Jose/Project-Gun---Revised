@@ -48,7 +48,9 @@ public class Gun : Weapon
         //Activate a tracer gameobject and then give it velocity:
         GameObject activatedTracer = objectPool.ActivateObject();
         activatedTracer.transform.position = muzzle.position;
-        Debug.Log("Tracer fired from " + activatedTracer.transform.localPosition);
+
+        //Debug.Log("Tracer fired from " + activatedTracer.transform.localPosition);
+
         activatedTracer.GetComponent<Rigidbody>().velocity = firstPersonCamera.forward * tracerTravelSpeed;
 
         Invoke("TurnOffTracer", tracerLifetime);
