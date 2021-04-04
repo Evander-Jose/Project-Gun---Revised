@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6390830047190808550}
   - component: {fileID: 1833378210869251423}
+  - component: {fileID: 6751908924976903807}
   m_Layer: 11
   m_Name: basic handgun
   m_TagString: Untagged
@@ -157,14 +158,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunSetting: {fileID: 11400000, guid: cf75f28a21c543f48b14c5beadc210c4, type: 2}
+  ammo: {fileID: 11400000, guid: c5e9375c00afeb449aa28bb96bd2f22d, type: 2}
   firstPersonCamera: {fileID: 0}
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 512
-  objectPool: {fileID: 0}
+  tracerPoolType: {fileID: 11400000, guid: 789bb25e69d617e4b92d67eb06457610, type: 2}
   tracerParticle: {fileID: 3882286105462171518, guid: 23b5883d50ae8f746ad28503e2cc4b4c, type: 3}
   tracerParticlePoolSize: 15
-  tracerTravelSpeed: 30
+  tracerTravelSpeed: 100
   tracerLifetime: 0.7
   muzzle: {fileID: 2491198231817495041}
-  anim: {fileID: 0}
+  anim: {fileID: 6751908924976903807}
+--- !u!95 &6751908924976903807
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051459926642077020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 46dd5697435b07d47be8a380540391e3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -21,7 +21,7 @@ public class HitMarker : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Tracer collision!");
+        //Debug.Log("Tracer collision!");
         Vector3 pointingDirection = collision.GetContact(0).normal;
         TurnOnHitMarker(pointingDirection);
     }

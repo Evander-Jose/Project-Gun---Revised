@@ -10,6 +10,8 @@ public class ObjectPoolCollection : MonoBehaviour
     //the size of pooled objects is unlikely to change.
     private Queue<GameObject> deactivatedObjects = new Queue<GameObject>();
     private Queue<GameObject> activatedObjects = new Queue<GameObject>();
+
+    public ObjectPoolType poolType;
     public void RegisterPooledObject(GameObject objectToAdd)
     {
         deactivatedObjects.Enqueue(objectToAdd);

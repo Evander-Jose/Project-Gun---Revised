@@ -17,7 +17,7 @@ public class WeaponUser : MonoBehaviour
         Health healthComponent = acquiredTarget.GetComponent<Health>();
         if(healthComponent != null)
         {
-            Debug.Log(activeWeapon.gameObject.name + " has dealt some amount of damage to " + healthComponent.gameObject);
+            //Debug.Log(activeWeapon.gameObject.name + " has dealt some amount of damage to " + healthComponent.gameObject);
             activeWeapon.InflictDamageToTarget(healthComponent);
         }
     }

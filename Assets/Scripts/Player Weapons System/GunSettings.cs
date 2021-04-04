@@ -8,4 +8,6 @@ public class GunSettings : ScriptableObject
     public float range;
     public float damage;
     public float fireRate;
+    [Space]
+    public int ammoConsumption = 1;
 }
