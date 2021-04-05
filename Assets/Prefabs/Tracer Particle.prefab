@@ -283,11 +283,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3882286105462171518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a787dbcecda12b4d916a44378e18953, type: 3}
+  m_Script: {fileID: 11500000, guid: a777f16e19efe774592382ace85320d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitMarkerObject: {fileID: 4197586012909793874}
-  lifetime: 0.2
+  lifetime: 0.1
 --- !u!114 &1630606992409118354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3882286105462171518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ac8fcda765e27844a82a1ae30cedf0a, type: 3}
+  m_Script: {fileID: 11500000, guid: e89d51b4f4f7d6a46a84a9714ec19f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnTracerEnabled:
@@ -314,18 +314,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3079511928398227446}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &4197586012909793874
 GameObject:
