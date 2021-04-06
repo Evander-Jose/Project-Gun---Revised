@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyWave : MonoBehaviour
 {
     private List<GameObject> childEnemies = new List<GameObject>();
-    public int lowEnemyThreshold = 2;
+    public int lowEnemyThreshold = 2; //The level of enemies at which the next wave will spawn.
+    public bool activated = false;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class EnemyWave : MonoBehaviour
     {
         foreach(GameObject e in childEnemies)
         {
+            activated = true;
             e.gameObject.SetActive(true);
         }
     }
@@ -31,7 +33,7 @@ public class EnemyWave : MonoBehaviour
         int output = 0;
         foreach(GameObject e in childEnemies)
         {
-            if (e.gameObject.activeSelf == true)
+            if (e.gameObject.activeInHierarchy == true)
                 output++;
             else
                 continue;
@@ -45,6 +47,7 @@ public class EnemyWave : MonoBehaviour
         int currentEnemiesAlive = EnemiesAlive();
         if(currentEnemiesAlive <= lowEnemyThreshold)
         {
+            Debug.Log(gameObject.name + " is low on enemies!");
             return true;
         } else
         {

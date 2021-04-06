@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lowEnemyThreshold: 2
+  activated: 0
 --- !u!1 &866942970055733716
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59908dd71aed29540bd7f47e8527a9fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowEnemyThreshold: 2
+  lowEnemyThreshold: 1
+  activated: 0
 --- !u!1 &2289855698334658156
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lowEnemyThreshold: 2
+  activated: 0
 --- !u!1 &4908390134034792597
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,10 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd20eaa6c9b9bad48819057b098f58c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyWaves:
-  - {fileID: 6461239916666953989}
-  - {fileID: 7889231681565232384}
-  - {fileID: 4388253623457872856}
   onBegin:
     m_PersistentCalls:
       m_Calls: []
