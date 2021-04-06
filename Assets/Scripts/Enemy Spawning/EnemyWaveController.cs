@@ -20,7 +20,8 @@ public class EnemyWaveController : MonoBehaviour
         enemyWaves = gameObject.GetComponentsInChildren<EnemyWave>();
     }
 
-    private void Update()
+    //Check using FixedUpdate, casue that way it wouldn't be called every frame, but instead called per 0.02 seconds.
+    private void FixedUpdate()
     {
         if (battleOngoing == false || cleared == true)
             return;
@@ -53,6 +54,16 @@ public class EnemyWaveController : MonoBehaviour
         }
 
 
+    }
+
+    private int TotalEnemiesAlive()
+    {
+        int output = 0;
+        foreach(EnemyWave wave in enemyWaves)
+        {
+            output += wave.EnemiesAlive();
+        }
+        return output;
     }
 
     public void BeginBattle()

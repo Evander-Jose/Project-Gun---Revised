@@ -341,6 +341,10 @@ PrefabInstance:
       propertyPath: startRoomPrefab
       value: 
       objectReference: {fileID: 9126651444374381228, guid: 4224eac709c800a42a85ae442f2532ae, type: 3}
+    - target: {fileID: 7582816445593061268, guid: 50090db31558a804fa285d1726cdd63c, type: 3}
+      propertyPath: roomGenerationSet
+      value: 
+      objectReference: {fileID: 11400000, guid: de31d705de2085c4c99dc98fb6f0c22f, type: 2}
     - target: {fileID: 7582816445593061269, guid: 50090db31558a804fa285d1726cdd63c, type: 3}
       propertyPath: m_Name
       value: Map Generator

@@ -12,11 +12,12 @@ public class MapGenerator : MonoBehaviour
     [Space]
     public float roomLength = 50.3f;
     [Space]
-    public GameObject testRoomPrefab;
+    public RoomGenerationSet roomGenerationSet;
+    [Space]
     public GameObject startRoomPrefab;
     public GameObject endRoomPrefab;
     [Space]
-    public List<GameObject> rooms;
+    public List<GameObject> generatedRooms;
 
 
     private void Start()
@@ -44,9 +45,9 @@ public class MapGenerator : MonoBehaviour
         }
 
         //Open the doors according to which rooms are adjacent to each room:
-        for(int i = 0; i < rooms.Count; i++)
+        for(int i = 0; i < generatedRooms.Count; i++)
         {
-            rooms[i].GetComponent<Room>().OpenDoorsToAdjacentRooms();
+            generatedRooms[i].GetComponent<Room>().OpenDoorsToAdjacentRooms();
             yield return new WaitForSeconds(0.2f);
         }
     }
@@ -56,17 +57,17 @@ public class MapGenerator : MonoBehaviour
         GameObject startRoom = Instantiate(startRoomPrefab, transform, true);
         startRoom.transform.position = new Vector3(0, 0, 0);
         
-        rooms.Add(startRoom);
+        generatedRooms.Add(startRoom);
 
         GameObject endRoom = Instantiate(endRoomPrefab, transform, true);
         endRoom.transform.position = new Vector3(maxRows, 0f, maxColumns) * roomLength;
     
-        rooms.Add(endRoom);
+        generatedRooms.Add(endRoom);
     }
 
     private GameObject GenerateRoom(Vector2 roomPosition)
     {
-        GameObject newRoom = Instantiate(testRoomPrefab, transform, true);
+        GameObject newRoom = Instantiate(roomGenerationSet.GetRandomRoom(), transform, true);
         newRoom.transform.position = new Vector3(roomPosition.x, 0f, roomPosition.y) * roomLength;
         return newRoom;
     }
@@ -78,7 +79,7 @@ public class MapGenerator : MonoBehaviour
         for(int i = 0; i < columnLength; i++)
         {
             GameObject newRoom = GenerateRoom(spawnPos);
-            rooms.Add(newRoom);
+            generatedRooms.Add(newRoom);
 
             spawnPos.y += 1;
 

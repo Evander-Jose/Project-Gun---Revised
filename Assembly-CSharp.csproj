@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\Map Generation\RoomGenerationSet.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
