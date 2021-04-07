@@ -26,6 +26,9 @@ public class Gun : Weapon
     private bool canFire = true;
     private ObjectPoolCollection objectPool;
 
+    public override event DelegateGetTarget OnGetTargets;
+    public override event DelegateDamageInflict OnTargetDamage;
+
     private void Awake()
     {
         //Find the correct object pool object:
@@ -67,6 +70,13 @@ public class Gun : Weapon
         //Reset the firing delay timer:
         timeSinceLastFire = 0f;
 
+        //Invokes any functions that are subscribed to the on get targets event (used by weapon modules)
+        if(OnGetTargets != null)
+        {
+            if (OnGetTargets.Invoke() == null)
+                Debug.Log("Module returning null is working");
+        }
+
         RaycastHit rayHit;
         Ray gunRay = new Ray(transform.position, firstPersonCamera.transform.forward);
 
@@ -103,6 +113,12 @@ public class Gun : Weapon
 
     public override void InflictDamageToTarget(Health other)
     {
+        if (OnTargetDamage != null)
+        {
+            Debug.Log("On Target Damage was invoked, a damage modifying module has been invokedds");
+            OnTargetDamage.Invoke(other);
+        }
+
         other.DealDamage(gunSetting.damage);
     }
 
@@ -117,5 +133,19 @@ public class Gun : Weapon
         {
             canFire = false;
         }
+    }
+
+    public override void ApplyWeaponModule(WeaponModule moduleToApply)
+    {
+        //The obligatory null check:
+        if (moduleToApply == null) return;
+
+        //For now, I have no plans of making modules stack, so here's a check to prevent that:
+        if (weaponModules.Contains(moduleToApply) == true) return;
+
+        weaponModules.Add(moduleToApply);
+        
+        OnGetTargets += moduleToApply.GetTarget;
+        OnTargetDamage += moduleToApply.InflictDamage;
     }
 }

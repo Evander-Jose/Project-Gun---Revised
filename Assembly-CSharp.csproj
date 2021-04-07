@@ -78,12 +78,14 @@
     <Compile Include="Assets\Scripts\AmmoDisplay.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\GunSettings.cs" />
     <Compile Include="Assets\Scripts\Particle Scripts\HitMarker.cs" />
+    <Compile Include="Assets\Scripts\Map Generation\RoomGenerationSet.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object Var\IntVariable.cs" />
     <Compile Include="Assets\Scripts\Player Movement\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\Map Generation\RoomGenerationSet.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Modules\WeaponModule.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Modules\TestModule.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
