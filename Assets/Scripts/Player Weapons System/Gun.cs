@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
-
+using System.Collections.Generic;
 
 public class Gun : Weapon
 {
@@ -73,8 +73,13 @@ public class Gun : Weapon
         //Invokes any functions that are subscribed to the on get targets event (used by weapon modules)
         if(OnGetTargets != null)
         {
-            if (OnGetTargets.Invoke() == null)
-                Debug.Log("Module returning null is working");
+            List<GameObject> targetsByModules = new List<GameObject>();
+            targetsByModules.Add(OnGetTargets.Invoke());
+            foreach(GameObject target in targetsByModules)
+            {
+                if (target == null) continue;
+                Debug.Log(target);
+            }
         }
 
         RaycastHit rayHit;
@@ -147,5 +152,7 @@ public class Gun : Weapon
         
         OnGetTargets += moduleToApply.GetTarget;
         OnTargetDamage += moduleToApply.InflictDamage;
+
+        moduleToApply.ModifyGunProperties(gunSetting);
     }
 }
