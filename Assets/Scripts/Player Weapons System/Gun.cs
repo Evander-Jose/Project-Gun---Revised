@@ -156,18 +156,17 @@ public class Gun : Weapon
         moduleToApply.ModifyGunProperties(gunSetting);
     }
 
-    public override void RemoveWeaponModule(WeaponModule module)
+    public override void RemoveWeaponModuleEffects(WeaponModule module)
     {
         //Remove module, and unsub from the events:
         if (module == null) return;
         if (weaponModules.Contains(module) == false) return;
-
-        //Remove module from the list:
-        weaponModules.Remove(module);
 
         OnGetTargets -= module.GetTarget;
         OnTargetDamage -= module.InflictDamage;
 
         module.RevertGunProperties(gunSetting);
     }
+
+
 }

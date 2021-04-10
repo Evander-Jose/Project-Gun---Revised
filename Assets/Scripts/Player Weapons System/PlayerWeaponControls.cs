@@ -19,12 +19,15 @@ public class PlayerWeaponControls : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
-            List<WeaponModule> weaponModules = new List<WeaponModule>();
-            weaponModules = playerWeaponUser.activeWeapon.weaponModules;
-            foreach(WeaponModule module in weaponModules)
+            int maxIndex = playerWeaponUser.activeWeapon.weaponModules.Count - 1;
+            if(maxIndex <= -1)
             {
-                playerWeaponUser.activeWeapon.RemoveWeaponModule(module);
+                return;
             }
+
+            WeaponModule moduleAtMaxIndex = playerWeaponUser.activeWeapon.weaponModules[maxIndex];
+            playerWeaponUser.activeWeapon.RemoveWeaponModuleEffects(moduleAtMaxIndex);
+            playerWeaponUser.activeWeapon.RemoveWeaponModuleFromList(moduleAtMaxIndex);
         }
     }
 }
