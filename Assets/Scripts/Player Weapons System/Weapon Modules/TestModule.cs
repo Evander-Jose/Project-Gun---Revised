@@ -23,4 +23,10 @@ public class TestModule : WeaponModule
         gunSettings.damage += 3.5f;
         gunSettings.fireRate += 3f;
     }
+
+    public override void RevertGunProperties(GunSettings gunSettings)
+    {
+        gunSettings.damage -= 3.5f;
+        gunSettings.fireRate -= 3f;
+    }
 }

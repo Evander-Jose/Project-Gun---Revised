@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Map Generation\Room.cs" />
     <Compile Include="Assets\Scripts\Particle Scripts\Tracer.cs" />
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\SimpleEnemy.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Modules\WeaponModuleApplier.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon.cs" />
     <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWaveController.cs" />
     <Compile Include="Assets\Scripts\Object Pooling\ObjectPoolType.cs" />
@@ -86,7 +87,6 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Modules\WeaponModuleApplier.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

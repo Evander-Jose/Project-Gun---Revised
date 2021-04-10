@@ -252,8 +252,8 @@ GameObject:
   - component: {fileID: 2553962116084705829}
   - component: {fileID: 2553962116084705830}
   - component: {fileID: 8956614193710140307}
+  - component: {fileID: 7047591603081948226}
   - component: {fileID: 1742786274957190133}
-  - component: {fileID: 7661479264740981102}
   - component: {fileID: 2053628310539799455}
   - component: {fileID: 1011142340}
   - component: {fileID: 1011142341}
@@ -357,20 +357,7 @@ MonoBehaviour:
   - {fileID: 2409121240394897349}
   - {fileID: 4179350109118323019}
   selectedWeapon: 0
---- !u!114 &1742786274957190133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2553962116084705850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232fb2529d5b8b840a2c146294daa478, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeWeapon: {fileID: 0}
---- !u!114 &7661479264740981102
+--- !u!114 &7047591603081948226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -384,6 +371,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerWeaponUser: {fileID: 1742786274957190133}
   playerWeaponSwitching: {fileID: 8956614193710140307}
+--- !u!114 &1742786274957190133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553962116084705850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232fb2529d5b8b840a2c146294daa478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeWeapon: {fileID: 0}
 --- !u!114 &2053628310539799455
 MonoBehaviour:
   m_ObjectHideFlags: 0

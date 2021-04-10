@@ -15,4 +15,5 @@ public abstract class Weapon : MonoBehaviour
 
     public List<WeaponModule> weaponModules = new List<WeaponModule>();
     public abstract void ApplyWeaponModule(WeaponModule module);
+    public abstract void RemoveWeaponModule(WeaponModule module);
 }
