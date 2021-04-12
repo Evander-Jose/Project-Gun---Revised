@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class PlayerWeaponControls : MonoBehaviour
 {
+    #region singleton
+    public static PlayerWeaponControls instance = null;
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
+    #endregion
+
     public WeaponUser playerWeaponUser;
     public WeaponSwitching playerWeaponSwitching;
 
