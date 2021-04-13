@@ -161,6 +161,7 @@ public class Gun : Weapon
         //Remove module, and unsub from the events:
         if (module == null) return;
         if (weaponModules.Contains(module) == false) return;
+        if (weaponModules.Count >= maximumModules.DefaultValue) return;
 
         OnGetTargets -= module.GetTarget;
         OnTargetDamage -= module.InflictDamage;

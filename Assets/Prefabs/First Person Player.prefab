@@ -740,6 +740,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2115958709431622135}
     m_Modifications:
     - target: {fileID: 1833378210869251423, guid: 4edb2261388060c4a895d10494c33592, type: 3}
+      propertyPath: maximumModules
+      value: 
+      objectReference: {fileID: 11400000, guid: efaf9d8d125b4d941bb5598d914da33a, type: 2}
+    - target: {fileID: 1833378210869251423, guid: 4edb2261388060c4a895d10494c33592, type: 3}
       propertyPath: firstPersonCamera
       value: 
       objectReference: {fileID: 2553962114692082191}
@@ -816,6 +820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2115958709431622135}
     m_Modifications:
+    - target: {fileID: 6142505417710567347, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}
+      propertyPath: maximumModules
+      value: 
+      objectReference: {fileID: 11400000, guid: efaf9d8d125b4d941bb5598d914da33a, type: 2}
     - target: {fileID: 6142505417710567347, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}
       propertyPath: firstPersonCamera
       value: 

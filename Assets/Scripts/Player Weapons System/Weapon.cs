@@ -21,4 +21,6 @@ public abstract class Weapon : MonoBehaviour
         if (weaponModules.Contains(module) == true)
         weaponModules.Remove(module);
     }
+
+    public IntVariable maximumModules;
 }
