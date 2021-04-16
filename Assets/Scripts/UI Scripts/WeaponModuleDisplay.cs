@@ -28,13 +28,40 @@ public class WeaponModuleDisplay : MonoBehaviour
 
     private IEnumerator DisplayModules(List<WeaponModule> listOfModules)
     {
+        //In case the weapon has no modules:
+        if(listOfModules.Count <= 0)
+        {
+            foreach(TextMeshProUGUI text in moduleLabels)
+            {
+                text.text = "No Module";
+            }
+        }
+
+        int emptyIndexes = maxModules.DefaultValue - listOfModules.Count;
+        int firstEmptyIndex = emptyIndexes - (emptyIndexes - 1);
+        firstEmptyIndex--;
+
+        //However, it doesn't cover all of the labels. So if a weapon had one module, the rest of the three
+        //labels are not updated.
+
+        //This does just that:
+        //Update empty labels:
+
+        for (int f = firstEmptyIndex; f < moduleLabels.Length; f++)
+        {
+            moduleLabels[f].text = "No Module";
+            
+        }
+
+        //Fill in the labels, where there are modules
         for (int i = 0; i < listOfModules.Count; i++)
         {
             if (moduleLabels[i] != null)
                 moduleLabels[i].text = listOfModules[i].name;
-            else
-                moduleLabels[i].text = "No Module";
-            yield return new WaitForSeconds(0.05f);
+
+            yield return null;
         }
+
+        
     }
 }
