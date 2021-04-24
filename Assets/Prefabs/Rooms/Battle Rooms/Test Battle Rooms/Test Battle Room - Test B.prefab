@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 484605138129235463}
   - component: {fileID: 6363234053023712493}
   - component: {fileID: 151402607632158732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1276,7 +1276,7 @@ GameObject:
   - component: {fileID: 4110512493222487647}
   - component: {fileID: 8443999468581867733}
   - component: {fileID: 3047750972068701268}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
