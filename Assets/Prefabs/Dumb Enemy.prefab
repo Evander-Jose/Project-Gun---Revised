@@ -92,9 +92,10 @@ GameObject:
   - component: {fileID: 455110468433433027}
   - component: {fileID: 455110468433433026}
   - component: {fileID: 455110468433433021}
-  - component: {fileID: 455110468433433020}
   - component: {fileID: 455110468433433022}
   - component: {fileID: 8568123877883899768}
+  - component: {fileID: 3209935381002661606}
+  - component: {fileID: 5710777792546409896}
   m_Layer: 9
   m_Name: Dumb Enemy
   m_TagString: Untagged
@@ -149,23 +150,6 @@ CapsuleCollider:
   m_Height: 3.64
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &455110468433433020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455110468433433025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4df733e409e931d49934211824e5c125, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTransform: {fileID: 0}
-  charController: {fileID: 455110468433433026}
-  moveSpeed: 5
-  damage: 1
-  attackRange: 5
 --- !u!114 &455110468433433022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,3 +193,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropItems:
   - {fileID: 11400000, guid: 4f6fea28a66d8c44abae864a6f79eed9, type: 2}
+--- !u!195 &3209935381002661606
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455110468433433025}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1.43
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 2
+--- !u!114 &5710777792546409896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455110468433433025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0f51ae91da762438e5991e6358f871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 3209935381002661606}
