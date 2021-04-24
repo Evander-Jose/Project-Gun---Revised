@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/test procedural generation.unity
+- path: Assets/Scenes/test room - weapon modules.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
