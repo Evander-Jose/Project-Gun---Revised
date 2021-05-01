@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9af65d10831c04c9a4677e2400fce6, type: 3}
   m_Name: Assault Rifle
   m_EditorClassIdentifier: 
-  range: 42
-  damage: 100
-  fireRate: 12
+  range: 40
+  damage: 3
+  fireRate: 9.5
+  ammoConsumption: 1
+  default_range: 40
+  default_damage: 3
+  default_fireRate: 9.5
+  default_ammoConsumption: 1

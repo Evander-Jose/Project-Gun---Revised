@@ -1173,6 +1173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a00905492e1d742a9949e3b1377cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponModuleToApply: {fileID: 0}
 --- !u!1001 &641567720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2259,7 +2260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086990935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.311033, y: 6.729934, z: -18.81854}
+  m_LocalPosition: {x: 79.2, y: 39.6, z: -129.1}
   m_LocalScale: {x: 1.6801, y: 1.6801, z: 1.6801}
   m_Children:
   - {fileID: 1555346949}
@@ -2278,6 +2279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a00905492e1d742a9949e3b1377cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponModuleToApply: {fileID: 11400000, guid: d4cba4eb41658624a87d7659cb5a9da4, type: 2}
 --- !u!43 &1115766491
 Mesh:
   m_ObjectHideFlags: 0
@@ -5079,7 +5081,11 @@ PrefabInstance:
     - target: {fileID: 934320693, guid: 4bb8b1af787dbca469f381f98a0d6578, type: 3}
       propertyPath: maxModules
       value: 
-      objectReference: {fileID: 11400000, guid: efaf9d8d125b4d941bb5598d914da33a, type: 2}
+      objectReference: {fileID: 11400000, guid: 9fc0353e81c99434c99661da931f94dd, type: 2}
+    - target: {fileID: 934320693, guid: 4bb8b1af787dbca469f381f98a0d6578, type: 3}
+      propertyPath: moduleLabels.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4947457060096232790, guid: 4bb8b1af787dbca469f381f98a0d6578, type: 3}
       propertyPath: m_Name
       value: Player hud

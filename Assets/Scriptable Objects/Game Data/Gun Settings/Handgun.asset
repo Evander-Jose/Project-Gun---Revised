@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Handgun
   m_EditorClassIdentifier: 
   range: 20
-  damage: 1.5
-  fireRate: 3.6
+  damage: 1
+  fireRate: 2
   ammoConsumption: 0
+  default_range: 20
+  default_damage: 1
+  default_fireRate: 2
+  default_ammoConsumption: 0

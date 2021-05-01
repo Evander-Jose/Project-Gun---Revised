@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moduleTextPrefab: {fileID: 6370376921968832915, guid: a5c263b8ad8e0bf46a59737e5ac3350f, type: 3}
+  maxModules: {fileID: 11400000, guid: 9fc0353e81c99434c99661da931f94dd, type: 2}
   moduleLabels:
   - {fileID: 0}
   - {fileID: 0}
