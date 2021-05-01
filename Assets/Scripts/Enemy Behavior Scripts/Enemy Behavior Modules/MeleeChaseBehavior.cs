@@ -32,6 +32,7 @@ public class MeleeChaseBehavior : MonoBehaviour
 
     private void ChasePlayer()
     {
+        agent.isStopped = false;
         if (agent.SetDestination(baseBehavior.PlayerTransform.position))
         {
             rb.velocity = agent.desiredVelocity * movementSpeed * Time.deltaTime;
@@ -42,6 +43,7 @@ public class MeleeChaseBehavior : MonoBehaviour
 
     private void AttackPlayer()
     {
+        agent.isStopped = true;
         if (timeSinceLastAttack > attackDelay)
         {
             timeSinceLastAttack = 0f;

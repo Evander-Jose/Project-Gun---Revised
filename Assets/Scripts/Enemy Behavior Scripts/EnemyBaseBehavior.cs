@@ -56,8 +56,10 @@ public class EnemyBaseBehavior : MonoBehaviour
     private void FixedUpdate()
     {
         float distanceFromPlayer = Vector3.Distance(playerTransform.position, transform.position);
-        
-        if(distanceFromPlayer >= detectionDistance)
+
+        Debug.Log("Distance from player: " + distanceFromPlayer);
+
+        if(distanceFromPlayer <= detectionDistance)
         {
             currentState = EnemyState.InsideRange;
         } else
