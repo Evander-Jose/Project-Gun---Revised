@@ -8,12 +8,14 @@ public class ItemDropper : MonoBehaviour
 
     public void RollForDropItem()
     {
+
         foreach(DropItem item in dropItems)
         {
             GameObject rolledItem = item.RollDropObject();
             if (rolledItem != null)
             {
-                GameObject droppedItem = Instantiate(rolledItem, transform.position, Quaternion.identity);
+                Debug.Log("Dropped item");
+                GameObject droppedItem = Instantiate(rolledItem, transform.position, Quaternion.identity) as GameObject;
                 break;
             } 
         }
