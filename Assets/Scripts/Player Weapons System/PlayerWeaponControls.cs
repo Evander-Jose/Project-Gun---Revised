@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class PlayerWeaponControls : MonoBehaviour
 {
+    #region singleton
+    public static PlayerWeaponControls instance = null;
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
+    #endregion
+
     public WeaponUser playerWeaponUser;
     public WeaponSwitching playerWeaponSwitching;
 
@@ -15,6 +26,19 @@ public class PlayerWeaponControls : MonoBehaviour
         if(Input.GetButton("Fire1"))
         {
             playerWeaponUser.UseWeapon();
+        }
+
+        if(Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            int maxIndex = playerWeaponUser.activeWeapon.weaponModules.Count - 1;
+            if(maxIndex <= -1)
+            {
+                return;
+            }
+
+            WeaponModule moduleAtMaxIndex = playerWeaponUser.activeWeapon.weaponModules[maxIndex];
+            playerWeaponUser.activeWeapon.RemoveWeaponModuleEffects(moduleAtMaxIndex);
+            playerWeaponUser.activeWeapon.RemoveWeaponModuleFromList(moduleAtMaxIndex);
         }
     }
 }
