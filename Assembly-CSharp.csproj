@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\NavMesh Components\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\Scripts\Item Drop System\ItemDropper.cs" />
     <Compile Include="Assets\Scripts\Object Pooling\ObjectPoolCollection.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
@@ -66,16 +67,19 @@
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\SimpleEnemy.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon.cs" />
     <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWaveController.cs" />
+    <Compile Include="Assets\NavMesh Components\NavMeshSurface.cs" />
     <Compile Include="Assets\Scripts\Object Pooling\ObjectPoolType.cs" />
     <Compile Include="Assets\Scripts\Player Movement\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWave.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\WeaponSwitching.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\PlayerWeaponControls.cs" />
+    <Compile Include="Assets\NavMesh Components\NavMeshLink.cs" />
     <Compile Include="Assets\Scripts\TestSceneReloader.cs" />
     <Compile Include="Assets\Scripts\Item Drop System\DropItem.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Gun.cs" />
     <Compile Include="Assets\Scripts\AmmoDisplay.cs" />
+    <Compile Include="Assets\NavMesh Components\NavMeshModifier.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\GunSettings.cs" />
     <Compile Include="Assets\Scripts\Particle Scripts\HitMarker.cs" />
     <Compile Include="Assets\Scripts\Map Generation\RoomGenerationSet.cs" />
@@ -84,10 +88,8 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\NavMesh Components\NavMeshModifierVolume.cs" />
-    <Compile Include="Assets\NavMesh Components\NavMeshSurface.cs" />
-    <Compile Include="Assets\NavMesh Components\NavMeshLink.cs" />
-    <Compile Include="Assets\NavMesh Components\NavMeshModifier.cs" />
+    <Compile Include="Assets\Scripts\Enemy Behavior Scripts\EnemyBaseBehavior.cs" />
+    <Compile Include="Assets\Scripts\Enemy Behavior Scripts\Enemy Behavior Modules\MeleeChaseBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
