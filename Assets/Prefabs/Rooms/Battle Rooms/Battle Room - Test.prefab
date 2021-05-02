@@ -179,7 +179,7 @@ Transform:
   - {fileID: 5789397271665207820}
   - {fileID: 7768901129594924298}
   m_Father: {fileID: 8087538092403375570}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7423677608800087574
 MonoBehaviour:
@@ -911,6 +911,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2401042038441619154, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2586691904120654390, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
       propertyPath: OnTrigger.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1029,11 +1033,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607965669105055924, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4790549644618605525, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4858385695691321353, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
       propertyPath: m_Mesh
@@ -1281,11 +1285,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8706483781999108444, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8902938598959438503, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8907079149171162613, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
       propertyPath: OnTrigger.m_PersistentCalls.m_Calls.Array.size

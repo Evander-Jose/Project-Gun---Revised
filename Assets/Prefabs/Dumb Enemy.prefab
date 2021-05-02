@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1988058027911639959}
-  movementSpeed: 16.25
+  movementSpeed: 21.19
   attackDelay: 3.05
   damageAmount: 2.61
 --- !u!195 &1988058027911639959
@@ -231,7 +231,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 455110468433433025}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.65
+  m_Radius: 1.8
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -242,5 +242,5 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 3.2
   m_BaseOffset: 1.55
-  m_WalkableMask: 3
+  m_WalkableMask: 67
   m_ObstacleAvoidanceType: 2
