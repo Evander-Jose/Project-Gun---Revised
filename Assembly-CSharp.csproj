@@ -68,7 +68,7 @@
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\SimpleEnemy.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Modules\WeaponModuleApplier.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon.cs" />
-    <Compile Include="Assets\Scripts\Enemy Behavior Scripts\Enemy Behavior Modules\MeleeChaseBehavior.cs" />
+    <Compile Include="Assets\Scripts\Enemy Behavior Scripts\Specific Enemy Behavior\MeleeChaseBehavior.cs" />
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\EnemyBaseBehavior.cs" />
     <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWaveController.cs" />
     <Compile Include="Assets\NavMesh Components\NavMeshSurface.cs" />
@@ -78,8 +78,10 @@
     <Compile Include="Assets\Scripts\Player Weapons System\WeaponSwitching.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\PlayerWeaponControls.cs" />
     <Compile Include="Assets\NavMesh Components\NavMeshLink.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\AmmoDisplay.cs" />
     <Compile Include="Assets\Scripts\TestSceneReloader.cs" />
     <Compile Include="Assets\Scripts\Item Drop System\DropItem.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\WeaponModuleDisplay.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Modules\WeaponModule.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Gun.cs" />
@@ -92,8 +94,10 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\WeaponModuleDisplay.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\AmmoDisplay.cs" />
+    <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\ProjectileLauncher.cs" />
+    <Compile Include="Assets\Scripts\Enemy Behavior Scripts\Specific Enemy Behavior\ProjectileLaunchEnemy.cs" />
+    <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\ProjectileBehavior.cs" />
+    <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\DamageProjectile.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

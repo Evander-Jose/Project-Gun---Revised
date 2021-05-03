@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AgentTypeID: 0
-  m_CollectObjects: 0
+  m_CollectObjects: 2
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
@@ -26,9 +26,9 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.18666667
+  m_VoxelSize: 0.22333334
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 0e676ecb3f62c014b8da3e8fcc7c80cf, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 3be99bdcc57288c4186823673b5d583d, type: 2}
 --- !u!1 &1718555002712366634
 GameObject:
   m_ObjectHideFlags: 0
@@ -5022,6 +5022,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2142956173957361681, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2720703936582963074, guid: 628a1cf541aac0d4cbdf459fe867a991, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
