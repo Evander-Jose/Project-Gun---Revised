@@ -1278,6 +1278,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1011142340, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2553962116084705828, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2976,6 +2980,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8470340182104258029, guid: f8ff847c09f5e574c8f70a95eb60d9c7, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 2117264453908211925, guid: 00120c4b2f08bee43876db1c75cd6173, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8ff847c09f5e574c8f70a95eb60d9c7, type: 3}
 --- !u!43 &1224086196

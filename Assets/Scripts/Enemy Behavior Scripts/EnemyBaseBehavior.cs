@@ -57,7 +57,7 @@ public class EnemyBaseBehavior : MonoBehaviour
     {
         float distanceFromPlayer = Vector3.Distance(playerTransform.position, transform.position);
 
-        Debug.Log("Distance from player: " + distanceFromPlayer);
+        //Debug.Log("Distance from player: " + distanceFromPlayer);
 
         if(distanceFromPlayer <= detectionDistance)
         {
