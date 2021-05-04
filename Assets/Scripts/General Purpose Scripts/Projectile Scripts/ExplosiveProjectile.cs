@@ -13,7 +13,8 @@ public class ExplosiveProjectile : MonoBehaviour
     public float explosionDamage;
     [Range(0f, 3.5f)] public float explosionDelay;
     [Space]
-    public LayerMask targetLayerMask; 
+    public LayerMask targetLayerMask;
+    public LayerMask obstacleLayerMask; 
 
     private void Start()
     {
@@ -50,15 +51,42 @@ public class ExplosiveProjectile : MonoBehaviour
                 //Cache the current gameobject in the for loop:
                 GameObject currentGameObject = sphereCheckColliders[i].gameObject;
 
-                Debug.Log("Got hit by an explosion! : " + currentGameObject.name);
+                //Debug.Log("Got detected by an explosion! : " + currentGameObject.name);
 
-                //Get the health component from the colliders from the sphere check:
-                Health otherHealthComponent = currentGameObject.GetComponent<Health>();
-                if (otherHealthComponent != null)
+                bool explosionUnobstructed = false;
+
+                //Test whether the explosion can travel towards the currentGameObject unobstructed:
+                #region Obstruction-Raycast Test
+                Vector3 checkDirection = currentGameObject.transform.position - transform.position;
+                Ray checkingRay = new Ray(transform.position, checkDirection);
+
+                //If I need to debug something:
+                RaycastHit hitDetection = new RaycastHit();
+
+                if (Physics.Raycast(checkingRay, out hitDetection, explosionRadius, obstacleLayerMask, QueryTriggerInteraction.Ignore) == false)
                 {
-                    //If there is a health component, deal damage based on the distance from the point of explosion.
-                    float totalDamageDealt = CalculateExplosionDamage(currentGameObject.transform.position);
-                    otherHealthComponent.DealDamage(totalDamageDealt);
+                    //Debug.Log("The explosion will be able to hit " + currentGameObject.name);
+                    explosionUnobstructed = true;
+                } else
+                {
+                    //Debug.Log("The GameObject " + hitDetection.collider.gameObject.name + " is in the way!");
+                    explosionUnobstructed = false;
+                }
+                #endregion
+
+                //After the Obstruction-Raycast Test, if it returns true, then do damage to the target's Health component:
+                if(explosionUnobstructed)
+                {
+                    #region Damage Target's Health Component
+                    //Get the health component from the colliders from the sphere check:
+                    Health otherHealthComponent = currentGameObject.GetComponent<Health>();
+                    if (otherHealthComponent != null)
+                    {
+                        //If there is a health component, deal damage based on the distance from the point of explosion.
+                        float totalDamageDealt = CalculateExplosionDamage(currentGameObject.transform.position);
+                        otherHealthComponent.DealDamage(totalDamageDealt);
+                    }
+                    #endregion
                 }
 
                 //Because I'm calling GetComponent, which is a resource-heavy function, I better mitigate that by 

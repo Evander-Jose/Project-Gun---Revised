@@ -95,6 +95,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3356848641637058053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4912155714046627573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd6de42868f04c49ad60ec6b8e88686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8470340182104258029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4912155714046627573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5bc1b70e62b5b45a284d623eb8d1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1528337245578217562, guid: e0dec5ae79b684141a5eb8d6539be43e, type: 3}
+  straightLaunchSpeed: 32.72
+  lobPower: 31.97
+  lobHeight: 16.1
+  attackDelay_inRange: 2
+  attackDelay_outRange: 5
+  launchLocation: {fileID: 8620182130187781318}
 --- !u!1 &4900939686080913817
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,37 +221,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3356848641637058053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4912155714046627573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cd6de42868f04c49ad60ec6b8e88686, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8470340182104258029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4912155714046627573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d5bc1b70e62b5b45a284d623eb8d1df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 1528337245578217562, guid: e0dec5ae79b684141a5eb8d6539be43e, type: 3}
-  straightLaunchSpeed: 32.72
-  lobPower: 31.97
-  lobHeight: 16.1
-  attackDelay_inRange: 2
-  attackDelay_outRange: 5
-  launchLocation: {fileID: 8620182130187781318}
 --- !u!1001 &4790593155712868148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -279,6 +279,10 @@ PrefabInstance:
     - target: {fileID: 455110468433433027, guid: e74c369f05b05e34daca514622e42d14, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988058027911639959, guid: e74c369f05b05e34daca514622e42d14, type: 3}
+      propertyPath: m_Speed
+      value: 5.7
       objectReference: {fileID: 0}
     - target: {fileID: 7127926639441590734, guid: e74c369f05b05e34daca514622e42d14, type: 3}
       propertyPath: m_IsKinematic

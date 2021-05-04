@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ab4f3f00d03a7e48843beb009257ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionRadius: 20
-  groundZeroRadius: 7.82
+  explosionRadius: 9.25
+  groundZeroRadius: 3.99
   explosionDamage: 20
   explosionDelay: 1.71
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 8192
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1001 &601149654770573455
 PrefabInstance:
   m_ObjectHideFlags: 0
