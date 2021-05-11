@@ -526,7 +526,7 @@ MonoBehaviour:
   firstPersonCameraTransform: {fileID: 1366500279}
   targetLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   tracerObjectPoolType: {fileID: 11400000, guid: 789bb25e69d617e4b92d67eb06457610, type: 2}
   tracerTravelSpeed: 150
 --- !u!1 &1243018471 stripped
@@ -552,7 +552,7 @@ MonoBehaviour:
   firstPersonCameraTransform: {fileID: 1366500279}
   targetLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   tracerObjectPoolType: {fileID: 11400000, guid: 789bb25e69d617e4b92d67eb06457610, type: 2}
   tracerTravelSpeed: 100
 --- !u!1001 &1256910267

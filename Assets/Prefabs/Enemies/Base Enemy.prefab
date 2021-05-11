@@ -226,10 +226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258a9ea5d987f1a409f559096312ee2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
-  movementSpeed: 0
-  attackDelay: 0
-  damageAmount: 0
+  agent: {fileID: 1988058027911639959}
+  movementSpeed: 10
+  attackDelay: 3
+  damageAmount: 10
 --- !u!114 &-2390267697473659302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,4 +243,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  detectionDistance: 5
+  detectionDistance: 10
