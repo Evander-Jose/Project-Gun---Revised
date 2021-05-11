@@ -277,6 +277,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2498897024193536386, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
+      propertyPath: attackDelay
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 2553962114692082190, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 17207
@@ -329,6 +333,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: First Person Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3581936835931821351, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
+      propertyPath: executionDelay
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206139023899225553, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
+      propertyPath: firstPersonCameraTransform
+      value: 
+      objectReference: {fileID: 1366500279}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
 --- !u!1001 &710482342
@@ -503,32 +515,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1169973543 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2400841116053042788, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
-  m_PrefabInstance: {fileID: 664873320}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1169973544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169973543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a621e39b98a0b6a488f08fb74c270d3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 50
-  damageAmount: 2
-  muzzleTransform: {fileID: 1502324719}
-  firstPersonCameraTransform: {fileID: 1366500279}
-  targetLayerMask:
-    serializedVersion: 2
-    m_Bits: 512
-  tracerObjectPoolType: {fileID: 11400000, guid: 789bb25e69d617e4b92d67eb06457610, type: 2}
-  tracerTravelSpeed: 150
 --- !u!1 &1243018471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1286930682272820315, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
@@ -546,6 +532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a621e39b98a0b6a488f08fb74c270d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
+  weaponComponentType: {fileID: 0}
   distance: 20
   damageAmount: 2
   muzzleTransform: {fileID: 222176507}
@@ -615,11 +603,6 @@ PrefabInstance:
 --- !u!4 &1366500279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2553962114692082191, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
-  m_PrefabInstance: {fileID: 664873320}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1502324719 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5066833352460136871, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
   m_PrefabInstance: {fileID: 664873320}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1544175263

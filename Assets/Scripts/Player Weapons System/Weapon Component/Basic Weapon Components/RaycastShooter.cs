@@ -5,7 +5,7 @@ using UnityEngine;
 //These are a new line of 'weapon components', which are monobehaviors which would be 
 //attached to the weapon gameobjects themselves in an attempt to make weapons more 
 //modular in their function.
-public class RaycastShooter : MonoBehaviour
+public class RaycastShooter : WeaponComponent
 {
     public float distance;
     public float damageAmount = 2f;
@@ -19,7 +19,7 @@ public class RaycastShooter : MonoBehaviour
     public ObjectPoolType tracerObjectPoolType;
     public float tracerTravelSpeed;
 
-    private void Start()
+    private void Awake()
     {
         ObjectPoolCollection[] objectPoolsInScene = FindObjectsOfType<ObjectPoolCollection>();
         foreach(ObjectPoolCollection objPool in objectPoolsInScene)
@@ -32,26 +32,23 @@ public class RaycastShooter : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void FireRaycast()
     {
-        if(Input.GetButtonDown("Fire1"))
-        {
-            //Tracer particle spawn:
-            SpawnTracer();
+        //Tracer particle spawn:
+        SpawnTracer();
 
-            //Raycast:
-            RaycastHit rayHit = new RaycastHit();
-            Ray shootRay = new Ray(firstPersonCameraTransform.position, firstPersonCameraTransform.forward);
+        //Raycast:
+        RaycastHit rayHit = new RaycastHit();
+        Ray shootRay = new Ray(firstPersonCameraTransform.position, firstPersonCameraTransform.forward);
             
-            //Raycast Check:
-            if(Physics.Raycast(shootRay, out rayHit, distance, targetLayerMask, QueryTriggerInteraction.Ignore))
+        //Raycast Check:
+        if(Physics.Raycast(shootRay, out rayHit, distance, targetLayerMask, QueryTriggerInteraction.Ignore))
+        {
+            Debug.Log(rayHit.collider.gameObject.name + " has been hit!");
+            Health healthComponent = rayHit.collider.GetComponent<Health>();
+            if(healthComponent != null)
             {
-                Debug.Log(rayHit.collider.gameObject.name + " has been hit!");
-                Health healthComponent = rayHit.collider.GetComponent<Health>();
-                if(healthComponent != null)
-                {
-                    healthComponent.DealDamage(damageAmount);
-                }
+                healthComponent.DealDamage(damageAmount);
             }
         }
     }
@@ -72,5 +69,18 @@ public class RaycastShooter : MonoBehaviour
     private void DeactivateTracer()
     {
         tracerObjectPool.DeactivateObject();
+    }
+
+    public override void ComponentOnInvoked()
+    {
+        FireRaycast();
+    }
+
+    float timeElapsed = 0f;
+
+
+    public override void ComponentOnCancel()
+    {
+        //Do nothing, because this is a base weapon component with no additional functionality!
     }
 }
