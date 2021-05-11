@@ -12,6 +12,19 @@ public class ObjectPoolCollection : MonoBehaviour
     private Queue<GameObject> activatedObjects = new Queue<GameObject>();
 
     public ObjectPoolType poolType;
+
+    void Awake()
+    {
+        for(int i = 0; i < poolType.objectPoolSize; i++)
+        {
+            GameObject newGameObject = Instantiate(poolType.prefab);
+            newGameObject.transform.localPosition = Vector3.zero;
+            newGameObject.transform.parent = transform;
+
+            RegisterPooledObject(newGameObject);
+        }
+    }
+
     public void RegisterPooledObject(GameObject objectToAdd)
     {
         deactivatedObjects.Enqueue(objectToAdd);

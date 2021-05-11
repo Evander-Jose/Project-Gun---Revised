@@ -5,5 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Object Pool Type")]
 public class ObjectPoolType : ScriptableObject
 {
-
+    public GameObject prefab;
+    public int objectPoolSize;
 }

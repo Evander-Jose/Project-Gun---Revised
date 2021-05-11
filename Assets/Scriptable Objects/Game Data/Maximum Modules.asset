@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ddecfe9d0a10a41b02fbff7e7eb035, type: 3}
   m_Name: Maximum Modules
   m_EditorClassIdentifier: 
-  defaultValue: 3
+  defaultValue: 2

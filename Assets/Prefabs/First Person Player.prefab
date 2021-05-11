@@ -251,12 +251,9 @@ GameObject:
   - component: {fileID: 2553962116084705851}
   - component: {fileID: 2553962116084705829}
   - component: {fileID: 2553962116084705830}
-  - component: {fileID: 8956614193710140307}
-  - component: {fileID: 1742786274957190133}
   - component: {fileID: 2053628310539799455}
   - component: {fileID: 1011142340}
   - component: {fileID: 1011142341}
-  - component: {fileID: 4801306417619069076}
   m_Layer: 13
   m_Name: First Person Player
   m_TagString: Untagged
@@ -341,35 +338,6 @@ MonoBehaviour:
   jumpHeight: 2
   jumpMultiplier: 0.74
   jumpFallMultiplier: 1.75
---- !u!114 &8956614193710140307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2553962116084705850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5413149c90a10444bc6ebaa8175ea1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapons:
-  - {fileID: 6581577485528501336}
-  - {fileID: 406475417538347630}
-  selectedWeapon: 0
---- !u!114 &1742786274957190133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2553962116084705850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232fb2529d5b8b840a2c146294daa478, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeWeapon: {fileID: 0}
 --- !u!114 &2053628310539799455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,20 +385,6 @@ CapsuleCollider:
   m_Height: 3.3
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4801306417619069076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2553962116084705850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b15ace49f8a3fe944bf04f1710daa167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerWeaponUser: {fileID: 1742786274957190133}
-  playerWeaponSwitching: {fileID: 8956614193710140307}
 --- !u!1 &4139899018243987525
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,19 +745,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1833378210869251423, guid: 4edb2261388060c4a895d10494c33592, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4edb2261388060c4a895d10494c33592, type: 3}
---- !u!114 &6581577485528501336 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1833378210869251423, guid: 4edb2261388060c4a895d10494c33592, type: 3}
-  m_PrefabInstance: {fileID: 4766781062014501127}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11361b3cfee1eae4e90232452a515041, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1916220135599535841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6390830047190808550, guid: 4edb2261388060c4a895d10494c33592, type: 3}
@@ -868,19 +812,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6142505417710567347, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}
---- !u!114 &406475417538347630 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6142505417710567347, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}
-  m_PrefabInstance: {fileID: 5808103237026430429}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11361b3cfee1eae4e90232452a515041, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &3033826268275420382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8827292720454144259, guid: 35bbc71e13de88f49bea5eb5fb1f720b, type: 3}

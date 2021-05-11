@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b6a02774e565b41900b36d1887fdfe, type: 3}
   m_Name: Tracer Particles Object Pool
   m_EditorClassIdentifier: 
+  prefab: {fileID: 3882286105462171518, guid: 23b5883d50ae8f746ad28503e2cc4b4c, type: 3}
+  objectPoolSize: 100

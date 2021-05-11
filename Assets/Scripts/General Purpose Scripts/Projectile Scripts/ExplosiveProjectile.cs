@@ -65,11 +65,11 @@ public class ExplosiveProjectile : MonoBehaviour
 
                 if (Physics.Raycast(checkingRay, out hitDetection, explosionRadius, obstacleLayerMask, QueryTriggerInteraction.Ignore) == false)
                 {
-                    //Debug.Log("The explosion will be able to hit " + currentGameObject.name);
+                    Debug.Log("The explosion will be able to hit " + currentGameObject.name);
                     explosionUnobstructed = true;
                 } else
                 {
-                    //Debug.Log("The GameObject " + hitDetection.collider.gameObject.name + " is in the way!");
+                    Debug.Log("The GameObject " + hitDetection.collider.gameObject.name + " is in the way!");
                     explosionUnobstructed = false;
                 }
                 #endregion

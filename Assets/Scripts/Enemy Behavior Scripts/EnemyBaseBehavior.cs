@@ -31,7 +31,7 @@ public class EnemyBaseBehavior : MonoBehaviour
 
     private void Awake()
     {
-        playerTransform = FindObjectOfType<PlayerWeaponControls>().transform;
+        playerTransform = FindObjectOfType<PlayerMovement>().transform;
     }
 
     private void Update()
