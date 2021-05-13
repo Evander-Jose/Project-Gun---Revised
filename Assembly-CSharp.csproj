@@ -96,6 +96,9 @@
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\WeaponSwitching.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\WeaponComponentActivator.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\WeaponType.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\ModuleGiver.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
