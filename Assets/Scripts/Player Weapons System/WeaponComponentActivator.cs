@@ -19,7 +19,7 @@ public class WeaponComponentActivator : MonoBehaviour
         //Debug.Log("Current Active Weapon: " + gameObject.name);
     }
 
-    private void Start()
+    private void Awake()
     {
         allAvailableWeaponComponents = GetComponentsInChildren<WeaponComponent>();
     }

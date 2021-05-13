@@ -473,6 +473,10 @@ PrefabInstance:
       propertyPath: executionDelay
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 7125167991973535563, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7206139023899225553, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
       propertyPath: firstPersonCameraTransform
       value: 
