@@ -5,6 +5,7 @@ using UnityEngine;
 public class HitMarker : MonoBehaviour
 {
     public GameObject hitMarkerObject;
+    public GameObject tracerGameObject;
     public float lifetime;
 
     private void TurnOnHitMarker(Vector3 pointDir)
@@ -17,6 +18,7 @@ public class HitMarker : MonoBehaviour
     private void TurnOffHitMarker()
     {
         hitMarkerObject.SetActive(false);
+        tracerGameObject.SetActive(false);
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -16,6 +16,7 @@ public class RaycastShooter : WeaponComponent
     public LayerMask targetLayerMask;
     [Header("Tracer Particles Settings")]
     private ObjectPoolCollection tracerObjectPool;
+    [SerializeField] private float tracerLife = 0.5f;
     public ObjectPoolType tracerObjectPoolType;
     public float tracerTravelSpeed;
 
@@ -63,7 +64,7 @@ public class RaycastShooter : WeaponComponent
         Rigidbody tracerRigidbody = newTracer.GetComponent<Rigidbody>();
         tracerRigidbody.velocity = muzzleTransform.forward * tracerTravelSpeed;
 
-        Invoke("DeactivateTracer", 0.1f);
+        Invoke("DeactivateTracer", tracerLife);
     }
 
     private void DeactivateTracer()

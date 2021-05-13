@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Ammo drop
   m_EditorClassIdentifier: 
   dropObjectPrefab: {fileID: 1649200688746321461, guid: 864c53e75009f2446a371556dfeda4a4, type: 3}
-  dropChance: 1
+  dropChance: 0.241
