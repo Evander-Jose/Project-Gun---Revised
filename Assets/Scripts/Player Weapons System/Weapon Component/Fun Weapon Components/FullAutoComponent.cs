@@ -12,25 +12,27 @@ public class FullAutoComponent : WeaponComponent
     //Cancel just means when the player let fo of the right click:
     public override void ComponentOnCancel()
     {
-        Debug.Log("FULL AUTO DISABLED");
+        //Debug.Log("FULL AUTO DISABLED");
         fullAutoMode = false;
     }
 
     //OnInvoked, means when the player held right click, and pressed left click.
     public override void ComponentOnInvoked()
     {
-        Debug.Log("FULL AUTO ENABLED");
+        //Debug.Log("FULL AUTO ENABLED");
         fullAutoMode = true;
     }
 
     //Update, means normal Update method
     private void Update()
     {
-        Debug.Log("FULL AUTO: " + fullAutoMode);
+        //Debug.Log("FULL AUTO: " + fullAutoMode);
         if(fullAutoMode == false)
         {
             timeSinceLastAttack += Time.deltaTime;
-        } else
+            return;
+        } 
+        else
         {
             if(Input.GetButton("Fire1") && timeSinceLastAttack > attackDelay)
             {

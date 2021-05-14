@@ -302,6 +302,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &194882668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194882669}
+  - component: {fileID: 194882670}
+  - component: {fileID: 194882671}
+  m_Layer: 11
+  m_Name: Weapon Ammo Increase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194882669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194882668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1243018472}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &194882670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194882668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd6de42868f04c49ad60ec6b8e88686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &194882671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194882668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f475f7a0cc9473348bbbae351906ce95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 2
+  weaponComponentType: {fileID: 11400000, guid: 81b8484cedda6904b89749fd29e51d53, type: 2}
+  launcher: {fileID: 194882670}
+  projetileToLaunch: {fileID: 1649200688746321461, guid: 864c53e75009f2446a371556dfeda4a4, type: 3}
+  launchDelay: 3
+  launchHeight: 1
+  launchForce: 50
+  muzzle: {fileID: 222176507}
 --- !u!4 &222176507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6968618424305918726, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
