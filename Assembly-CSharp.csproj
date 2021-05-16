@@ -58,10 +58,11 @@
   <ItemGroup>
     <Compile Include="Assets\NavMesh Components\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\Scripts\Item Drop System\ItemDropper.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Fun Weapon Components\ProjectileWeaponComponent.cs" />
     <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\ExplosiveProjectile.cs" />
     <Compile Include="Assets\Scripts\Object Pooling\ObjectPoolCollection.cs" />
     <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\ProjectileBehavior.cs" />
-    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\WeaponType.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Scriptable Object Classes\WeaponType.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\ProjectileLauncher.cs" />
     <Compile Include="Assets\Scripts\Health System\Health.cs" />
@@ -76,11 +77,9 @@
     <Compile Include="Assets\Scripts\Object Pooling\ObjectPoolType.cs" />
     <Compile Include="Assets\Scripts\Player Movement\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\Specific Enemy Behavior\ProjectileLaunchEnemy.cs" />
-    <Compile Include="Assets\Scripts\Player Weapons System\WeaponComponentActivator.cs" />
     <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWave.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\IWeaponComponent.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Fun Weapon Components\FullAutoComponent.cs" />
-    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Base\WeaponComponentScheduler.cs" />
     <Compile Include="Assets\NavMesh Components\NavMeshLink.cs" />
     <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\DamageProjectile.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\AmmoDisplay.cs" />
@@ -88,8 +87,8 @@
     <Compile Include="Assets\Scripts\Item Drop System\DropItem.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Basic Weapon Components\RaycastShooter.cs" />
-    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Base\WeaponComponent.cs" />
-    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Base\WeaponComponentType.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\WeaponComponent.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Scriptable Object Classes\WeaponComponentType.cs" />
     <Compile Include="Assets\NavMesh Components\NavMeshModifier.cs" />
     <Compile Include="Assets\Scripts\Particle Scripts\HitMarker.cs" />
     <Compile Include="Assets\Scripts\Map Generation\RoomGenerationSet.cs" />
@@ -99,7 +98,8 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\ProjectileWeaponComponent.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Execution and Activation\WeaponComponentScheduler.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Execution and Activation\WeaponComponentActivator.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

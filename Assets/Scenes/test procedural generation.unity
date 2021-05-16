@@ -123,26 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &97885829 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2400841116053042788, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
-  m_PrefabInstance: {fileID: 664873320}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &97885833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97885829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e806fbd7980d36e43933ea7c5c7be7f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponType: {fileID: 11400000, guid: 2b9897e06f8b02349b8ee745bcfc2765, type: 2}
-  allAvailableWeaponComponents: []
-  baseType: {fileID: 11400000, guid: 81b8484cedda6904b89749fd29e51d53, type: 2}
 --- !u!1001 &112522522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -533,9 +513,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: First Person Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3581936835931821351, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
-      propertyPath: executionDelay
-      value: 0.01
+    - target: {fileID: 5869386375595118643, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
+      propertyPath: attackDelay
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7125167991973535563, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
       propertyPath: m_IsActive
@@ -763,45 +743,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1243018471 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1286930682272820315, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
-  m_PrefabInstance: {fileID: 664873320}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1243018472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1916220135599535841, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
   m_PrefabInstance: {fileID: 664873320}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1243018474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243018471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b786644922f14504485e60b09b1fb6a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  executionDelay: 0.05
-  baseType: {fileID: 11400000, guid: 81b8484cedda6904b89749fd29e51d53, type: 2}
---- !u!114 &1243018475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243018471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e806fbd7980d36e43933ea7c5c7be7f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponType: {fileID: 11400000, guid: 35761d795b360a04ca6dbf0188dcf73f, type: 2}
-  allAvailableWeaponComponents: []
-  baseType: {fileID: 11400000, guid: 81b8484cedda6904b89749fd29e51d53, type: 2}
 --- !u!1001 &1256910267
 PrefabInstance:
   m_ObjectHideFlags: 0

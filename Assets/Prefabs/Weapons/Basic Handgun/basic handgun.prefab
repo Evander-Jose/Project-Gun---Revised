@@ -122,6 +122,8 @@ GameObject:
   - component: {fileID: 6390830047190808550}
   - component: {fileID: 1833378210869251423}
   - component: {fileID: 6751908924976903807}
+  - component: {fileID: 6114098554237242245}
+  - component: {fileID: 8628529450667363719}
   m_Layer: 11
   m_Name: basic handgun
   m_TagString: Untagged
@@ -154,24 +156,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6051459926642077020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11361b3cfee1eae4e90232452a515041, type: 3}
+  m_Script: {fileID: 11500000, guid: 03cf9996a89b3274d9e2103dded4dfe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponModules: []
-  maximumModules: {fileID: 11400000, guid: 9fc0353e81c99434c99661da931f94dd, type: 2}
-  gunSetting: {fileID: 11400000, guid: cf75f28a21c543f48b14c5beadc210c4, type: 2}
-  ammo: {fileID: 11400000, guid: c5e9375c00afeb449aa28bb96bd2f22d, type: 2}
-  firstPersonCamera: {fileID: 0}
-  targetLayerMask:
-    serializedVersion: 2
-    m_Bits: 512
-  tracerPoolType: {fileID: 11400000, guid: 789bb25e69d617e4b92d67eb06457610, type: 2}
-  tracerParticle: {fileID: 3882286105462171518, guid: 23b5883d50ae8f746ad28503e2cc4b4c, type: 3}
-  tracerParticlePoolSize: 15
-  tracerTravelSpeed: 100
-  tracerLifetime: 0.7
-  muzzle: {fileID: 2491198231817495041}
-  anim: {fileID: 6751908924976903807}
+  executionDelay: 0.05
+  baseType: {fileID: 0}
 --- !u!95 &6751908924976903807
 Animator:
   serializedVersion: 3
@@ -191,3 +180,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6114098554237242245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051459926642077020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cf9996a89b3274d9e2103dded4dfe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executionDelay: 0.05
+  baseType: {fileID: 11400000, guid: 81b8484cedda6904b89749fd29e51d53, type: 2}
+--- !u!114 &8628529450667363719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051459926642077020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d927dab53786b4db686a6c69bd0bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponType: {fileID: 11400000, guid: 35761d795b360a04ca6dbf0188dcf73f, type: 2}
+  allAvailableWeaponComponents: []
+  baseType: {fileID: 11400000, guid: 81b8484cedda6904b89749fd29e51d53, type: 2}
