@@ -9,6 +9,8 @@ public class RaycastShooter : WeaponComponent
 {
     public float distance;
     public float damageAmount = 2f;
+    [Range(0f, 3f)] public float attackDelay = 0.5f;
+    private float timeSinceLastShot = 0f;
     [Space]
     [Header("Raycast Settings")]
     public Transform muzzleTransform;
@@ -33,7 +35,7 @@ public class RaycastShooter : WeaponComponent
         }
     }
 
-    public void FireRaycast()
+    public GameObject GetTargetByRaycast()
     {
         //Tracer particle spawn:
         SpawnTracer();
@@ -45,12 +47,16 @@ public class RaycastShooter : WeaponComponent
         //Raycast Check:
         if(Physics.Raycast(shootRay, out rayHit, distance, targetLayerMask, QueryTriggerInteraction.Ignore))
         {
-            Debug.Log(rayHit.collider.gameObject.name + " has been hit!");
-            Health healthComponent = rayHit.collider.GetComponent<Health>();
+            //Debug.Log(rayHit.collider.gameObject.name + " has been hit!");
+            /*Health healthComponent = rayHit.collider.GetComponent<Health>();
             if(healthComponent != null)
             {
                 healthComponent.DealDamage(damageAmount);
-            }
+            }*/
+            return rayHit.collider.gameObject;
+        } else
+        {
+            return null;
         }
     }
 
@@ -74,10 +80,34 @@ public class RaycastShooter : WeaponComponent
 
     public override void ComponentOnInvoked()
     {
-        FireRaycast();
+        bool canAttack = timeSinceLastShot > attackDelay;
+        GameObject target = null;
+        if (canAttack)
+        {
+            target = GetTargetByRaycast();
+            timeSinceLastShot = 0f;
+        }
+
+        if (target != null)
+        {
+            DamageTarget(target);
+        }
+        
     }
 
-    float timeElapsed = 0f;
+    public void DamageTarget(GameObject target)
+    {
+        Health healthComponent = target.GetComponent<Health>();
+        if (healthComponent != null)
+        {
+            healthComponent.DealDamage(damageAmount);
+        }
+    }
+
+    private void Update()
+    {
+        timeSinceLastShot += Time.deltaTime;
+    }
 
 
     public override void ComponentOnCancel()

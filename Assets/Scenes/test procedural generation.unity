@@ -187,6 +187,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4639381908275968873, guid: 61a337d206a8bbe4aa5a9ea6454cc3e8, type: 3}
+      propertyPath: attackDelay
+      value: 1.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639381908275968873, guid: 61a337d206a8bbe4aa5a9ea6454cc3e8, type: 3}
       propertyPath: damageAmount
       value: 3
       objectReference: {fileID: 0}
@@ -201,7 +205,7 @@ PrefabInstance:
     - target: {fileID: 4639381908275968873, guid: 61a337d206a8bbe4aa5a9ea6454cc3e8, type: 3}
       propertyPath: weaponComponentType
       value: 
-      objectReference: {fileID: 11400000, guid: 81b8484cedda6904b89749fd29e51d53, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4639381908275968873, guid: 61a337d206a8bbe4aa5a9ea6454cc3e8, type: 3}
       propertyPath: tracerObjectPoolType
       value: 
@@ -216,6 +220,17 @@ PrefabInstance:
       objectReference: {fileID: 419169636}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61a337d206a8bbe4aa5a9ea6454cc3e8, type: 3}
+--- !u!114 &112522523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4639381908275968873, guid: 61a337d206a8bbe4aa5a9ea6454cc3e8, type: 3}
+  m_PrefabInstance: {fileID: 112522522}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a621e39b98a0b6a488f08fb74c270d3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &186898880
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +307,6 @@ GameObject:
   m_Component:
   - component: {fileID: 194882669}
   - component: {fileID: 194882670}
-  - component: {fileID: 194882671}
   m_Layer: 11
   m_Name: Weapon Ammo Increase
   m_TagString: Untagged
@@ -323,29 +337,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 194882668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cd6de42868f04c49ad60ec6b8e88686, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &194882671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 194882668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f475f7a0cc9473348bbbae351906ce95, type: 3}
+  m_Script: {fileID: 11500000, guid: bf8506c80cea050419ec2db993e4e7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   priority: 2
   weaponComponentType: {fileID: 11400000, guid: 81b8484cedda6904b89749fd29e51d53, type: 2}
-  launcher: {fileID: 194882670}
-  projetileToLaunch: {fileID: 1649200688746321461, guid: 864c53e75009f2446a371556dfeda4a4, type: 3}
-  launchDelay: 3
-  launchHeight: 1
-  launchForce: 50
-  muzzle: {fileID: 222176507}
+  raycastShooter: {fileID: 112522523}
+  ammoPickupPrefab: {fileID: 1649200688746321461, guid: 864c53e75009f2446a371556dfeda4a4, type: 3}
+  dropChances: 0.731
 --- !u!4 &222176507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6968618424305918726, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
@@ -520,6 +519,14 @@ PrefabInstance:
     - target: {fileID: 7125167991973535563, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206139023899225553, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
+      propertyPath: attackDelay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206139023899225553, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
+      propertyPath: damageAmount
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7206139023899225553, guid: 76532c25d98a3d84caac8b5e245a29ed, type: 3}
       propertyPath: firstPersonCameraTransform

@@ -59,11 +59,11 @@
     <Compile Include="Assets\Editor\NavMeshLinkEditor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\Editor\NavMeshModifierVolumeEditor.cs" />
+    <Compile Include="Assets\Editor\WeaponComponentActivatorEditor.cs" />
     <Compile Include="Assets\Editor\NavMeshSurfaceEditor.cs" />
     <Compile Include="Assets\Editor\NavMeshAssetManager.cs" />
     <Compile Include="Assets\Editor\NavMeshComponentsGUIUtility.cs" />
     <Compile Include="Assets\Editor\NavMeshModifierEditor.cs" />
-    <Compile Include="Assets\Editor\WeaponComponentActivatorEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

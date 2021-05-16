@@ -18,9 +18,6 @@ public class WeaponComponentScheduler : MonoBehaviour
     private WeaponComponent[] baseWeaponComponents;
     private WeaponComponent[] auxilliaryWeaponComponents;
 
-    //The amount of time waited, between executing the update function of 
-    //one component and executing the next.
-    [SerializeField] private float executionDelay = 0.05f;
     public WeaponComponentType baseType;
 
     void Start()
@@ -34,7 +31,7 @@ public class WeaponComponentScheduler : MonoBehaviour
         //Search for the base components:
         foreach(WeaponComponent weaponComponent in allWeaponComponents)
         {
-            if(weaponComponent.weaponComponentType.name == baseType.name)
+            if(weaponComponent.weaponComponentType == baseType)
             {
                 temp_baseComponents.Add(weaponComponent);
             }
@@ -42,15 +39,18 @@ public class WeaponComponentScheduler : MonoBehaviour
         temp_baseComponents.Sort(); //Sort by priority
         baseWeaponComponents = temp_baseComponents.ToArray();
 
+
+
         //Declare list of auxilliary components:
         List<WeaponComponent> temp_additionalComponents = new List<WeaponComponent>();
 
         //Search for auxilliary components:
         foreach(WeaponComponent weaponComponent in allWeaponComponents)
         {
-            if (weaponComponent.weaponComponentType.name == baseType.name || weaponComponent.weaponComponentType == null) continue;
-
-            temp_additionalComponents.Add(weaponComponent);
+            if (weaponComponent.weaponComponentType != baseType)
+            {
+                temp_additionalComponents.Add(weaponComponent);
+            }
         }
         temp_additionalComponents.Sort(); //Sort by priority
         auxilliaryWeaponComponents = temp_additionalComponents.ToArray();

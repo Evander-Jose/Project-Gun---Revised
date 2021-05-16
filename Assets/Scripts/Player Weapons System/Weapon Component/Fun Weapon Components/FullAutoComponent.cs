@@ -40,7 +40,10 @@ public class FullAutoComponent : WeaponComponent
 
                 //Yeah, I know this is kinda of a hacky solution to my own solution, 
                 //but I guess this works... Is this what people call emergent design?
-                baseRaycastShooter.FireRaycast();
+                GameObject target = baseRaycastShooter.GetTargetByRaycast();
+
+                if (target != null)
+                    baseRaycastShooter.DamageTarget(target);
             }
             timeSinceLastAttack += Time.deltaTime;
         }
