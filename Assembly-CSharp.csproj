@@ -104,6 +104,10 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\FadeOutText.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\CursorDeLocker.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\Pause.cs" />
+    <Compile Include="Assets\ContinueButton.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
