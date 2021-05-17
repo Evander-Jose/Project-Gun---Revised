@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Fun Weapon Components\ProjectileWeaponComponent.cs" />
     <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\ExplosiveProjectile.cs" />
     <Compile Include="Assets\Scripts\Object Pooling\ObjectPoolCollection.cs" />
+    <Compile Include="Assets\Scripts\Level Loading\NextLevelLoader.cs" />
     <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\ProjectileBehavior.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Scriptable Object Classes\WeaponType.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
@@ -82,10 +83,12 @@
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Fun Weapon Components\GiveWeaponAmmoOnKill.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\IWeaponComponent.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Fun Weapon Components\FullAutoComponent.cs" />
+    <Compile Include="Assets\Scripts\Level Loading\LevelList.cs" />
+    <Compile Include="Assets\TestTeleportToEnd.cs" />
     <Compile Include="Assets\NavMesh Components\NavMeshLink.cs" />
     <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\DamageProjectile.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\AmmoDisplay.cs" />
-    <Compile Include="Assets\Scripts\TestSceneReloader.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Execution and Activation\WeaponComponentActivator.cs" />
     <Compile Include="Assets\Scripts\Item Drop System\DropItem.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
@@ -101,9 +104,6 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\TestTeleportToEnd.cs" />
-    <Compile Include="Assets\Scripts\Level Loading\NextLevelLoader.cs" />
-    <Compile Include="Assets\Scripts\Level Loading\LevelList.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

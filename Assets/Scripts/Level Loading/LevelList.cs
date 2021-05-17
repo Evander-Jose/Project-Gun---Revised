@@ -11,6 +11,7 @@ public class LevelList : ScriptableObject
 
     public void LoadFirstLevel()
     {
+        currentScene = 0;
         SceneManager.LoadScene(sceneBuildIndexes[currentScene]);
     }
 
