@@ -359,8 +359,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 2553962114692082191}
-  lookSensitivityX: 2.4
-  lookSensitivityY: 2.4
+  lookSensitivityX: {fileID: 11400000, guid: 13529c56d68a27846a330663cecc5dc2, type: 2}
+  lookSensitivityY: {fileID: 11400000, guid: 2a4cd4f5f085fdc4d8c2c590dde1328b, type: 2}
   maximumUpLookAngle: -80
   maximumDownLookAngle: 80
   heldWeapon: {fileID: 2115958709431622135}

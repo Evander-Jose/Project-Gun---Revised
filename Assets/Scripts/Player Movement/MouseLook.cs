@@ -6,8 +6,8 @@ public class MouseLook : MonoBehaviour
 {
     public Transform cameraTransform;
     [Space]
-    public float lookSensitivityX = 3f;
-    public float lookSensitivityY = 2f;
+    public FloatVariable lookSensitivityX;
+    public FloatVariable lookSensitivityY;
     [Space]
     public float maximumUpLookAngle = 80;
     public float maximumDownLookAngle = 60;
@@ -26,8 +26,8 @@ public class MouseLook : MonoBehaviour
         float x_input = Input.GetAxis("Mouse X");
         float y_input = Input.GetAxis("Mouse Y");
 
-        x_input *= Time.deltaTime * lookSensitivityX * multiplierConstant;
-        y_input *= Time.deltaTime * lookSensitivityY * multiplierConstant;
+        x_input *= Time.deltaTime * lookSensitivityX.Value * multiplierConstant;
+        y_input *= Time.deltaTime * lookSensitivityY.Value * multiplierConstant;
 
         //Looking left and right (this rotates the player body, not the camera:):
         transform.Rotate(Vector3.up * x_input);
