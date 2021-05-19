@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Build Scenes/Title Screens/victory_screen.unity
+- path: Assets/Scenes/Build Scenes/Levels/level_01.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NavMesh Components\NavMeshModifierVolume.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\FloatVariableSlider.cs" />
     <Compile Include="Assets\Scripts\Item Drop System\ItemDropper.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Fun Weapon Components\ProjectileWeaponComponent.cs" />
     <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\ExplosiveProjectile.cs" />
@@ -69,6 +70,8 @@
     <Compile Include="Assets\Scripts\Health System\Health.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\ModuleGiver.cs" />
     <Compile Include="Assets\Scripts\Map Generation\Room.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Object Var\FloatVariable.cs" />
+    <Compile Include="Assets\Scripts\SettingsLoader.cs" />
     <Compile Include="Assets\Scripts\Particle Scripts\Tracer.cs" />
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\SimpleEnemy.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\FadeOutText.cs" />
@@ -89,6 +92,7 @@
     <Compile Include="Assets\TestTeleportToEnd.cs" />
     <Compile Include="Assets\NavMesh Components\NavMeshLink.cs" />
     <Compile Include="Assets\Scripts\General Purpose Scripts\Projectile Scripts\DamageProjectile.cs" />
+    <Compile Include="Assets\Scripts\Player Movement\PlayerSettings.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\AmmoDisplay.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\CursorDeLocker.cs" />
@@ -98,6 +102,7 @@
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Basic Weapon Components\RaycastShooter.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\WeaponComponent.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Scriptable Object Classes\WeaponComponentType.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\FloatVariableDisplay.cs" />
     <Compile Include="Assets\NavMesh Components\NavMeshModifier.cs" />
     <Compile Include="Assets\Scripts\Particle Scripts\HitMarker.cs" />
     <Compile Include="Assets\Scripts\Map Generation\RoomGenerationSet.cs" />
@@ -108,11 +113,8 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\Scriptable Object Var\FloatVariable.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\FloatVariableSlider.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\FloatVariableDisplay.cs" />
-    <Compile Include="Assets\Scripts\Player Movement\PlayerSettings.cs" />
-    <Compile Include="Assets\Scripts\SettingsLoader.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component Giving\WeaponComponentStand.cs" />
+    <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component Giving\WeaponComponentRewardSet.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

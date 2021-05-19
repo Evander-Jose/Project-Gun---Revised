@@ -11,8 +11,8 @@ public class Room : MonoBehaviour
     [SerializeField] private GameObject eastDoor;
     public LayerMask groundLayerMask;
 
-    public bool inBattle = false;
-    private bool cleared = false;
+    private bool inBattle = false; //The whole purpose of marking the room as being in battle is so that there can be no repeat triggering of beginning battle.
+    private bool cleared = false; //This is to mark the room as cleared, as to prevent, you guessed it, repeating the battle.
 
     private void OnEnable()
     {

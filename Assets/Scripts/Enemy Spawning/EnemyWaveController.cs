@@ -46,6 +46,7 @@ public class EnemyWaveController : MonoBehaviour
 
         }
 
+        //Using a sort of 'bool latch' to only trigger the onEnd UnityEvent exactly once.
         if (cleared == true && clearTriggered == false)
         {
             clearTriggered = true;
