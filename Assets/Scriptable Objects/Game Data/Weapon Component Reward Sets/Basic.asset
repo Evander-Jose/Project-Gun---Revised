@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eec5cb1f9c9b274091c4f7487bdfc75, type: 3}
   m_Name: Basic
   m_EditorClassIdentifier: 
-  rewardChance: 0.5
+  rewardChance: 1
   possibleDrops:
   - weaponComponentType: {fileID: 11400000, guid: b7dd1096ff604dd4c94a5d9cbaf70870, type: 2}
     probability: 0.36
