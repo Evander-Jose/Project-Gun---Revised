@@ -48,6 +48,52 @@ MonoBehaviour:
   raycastShooter: {fileID: 4639381908830840603}
   ammoPickupPrefab: {fileID: 1649200688746321461, guid: 864c53e75009f2446a371556dfeda4a4, type: 3}
   dropChances: 0.731
+--- !u!1 &485340744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485340745}
+  - component: {fileID: 485340746}
+  m_Layer: 13
+  m_Name: Player Health Variable Component
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &485340745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485340744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2553962116084705828}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &485340746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485340744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14390e44db4121648afbb148edf536a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 2053628310539799455}
+  playerHealthVariable: {fileID: 11400000, guid: 93a66223f83946148a63cb3f3f0bdd05, type: 2}
+  maxPlayerHealthVariable: {fileID: 11400000, guid: 60f56bff45256e3498e5251c7c0782c4, type: 2}
 --- !u!1 &2553962114692082188
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +371,7 @@ Transform:
   - {fileID: 2553962115961562623}
   - {fileID: 2553962114726869825}
   - {fileID: 5110701388383315157}
+  - {fileID: 485340745}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Health System\Health.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\ModuleGiver.cs" />
     <Compile Include="Assets\Scripts\Map Generation\Room.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\ReadPlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object Var\FloatVariable.cs" />
     <Compile Include="Assets\Scripts\SettingsLoader.cs" />
     <Compile Include="Assets\Scripts\Particle Scripts\Tracer.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\Player Movement\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\Specific Enemy Behavior\ProjectileLaunchEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWave.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Fun Weapon Components\GiveWeaponAmmoOnKill.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\IWeaponComponent.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Fun Weapon Components\FullAutoComponent.cs" />
@@ -115,8 +117,9 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\HealthBar.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\ReadPlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Speedrun Timer\SpeedrunTimer.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Object Var\BoolVariable.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\SpeedrunTimerDisplay.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

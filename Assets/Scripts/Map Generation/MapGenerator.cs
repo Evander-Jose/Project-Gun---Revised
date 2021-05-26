@@ -41,14 +41,14 @@ public class MapGenerator : MonoBehaviour
                 //Generate the last column:
                 StartCoroutine(GenerateColumnUpwards(new Vector2(maxRows, 0), maxColumns));
             }
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.05f);
         }
 
         //Open the doors according to which rooms are adjacent to each room:
         for(int i = 0; i < generatedRooms.Count; i++)
         {
             generatedRooms[i].GetComponent<Room>().OpenDoorsToAdjacentRooms();
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.05f);
         }
     }
 

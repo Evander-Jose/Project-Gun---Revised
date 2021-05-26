@@ -1759,6 +1759,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19927564, guid: 4bb8b1af787dbca469f381f98a0d6578, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19927564, guid: 4bb8b1af787dbca469f381f98a0d6578, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19927564, guid: 4bb8b1af787dbca469f381f98a0d6578, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189520355, guid: 4bb8b1af787dbca469f381f98a0d6578, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189520355, guid: 4bb8b1af787dbca469f381f98a0d6578, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 934320693, guid: 4bb8b1af787dbca469f381f98a0d6578, type: 3}
       propertyPath: moduleLabels.Array.size
       value: 0
