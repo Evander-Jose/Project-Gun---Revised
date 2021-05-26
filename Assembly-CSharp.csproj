@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\SimpleEnemy.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\FadeOutText.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\ContinueButton.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\SpeedrunTimerDisplay.cs" />
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\Specific Enemy Behavior\MeleeChaseBehavior.cs" />
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\EnemyBaseBehavior.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Execution and Activation\WeaponComponentScheduler.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\Scripts\UI Scripts\CursorDeLocker.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Execution and Activation\WeaponComponentActivator.cs" />
     <Compile Include="Assets\Scripts\Item Drop System\DropItem.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Object Var\BoolVariable.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Basic Weapon Components\RaycastShooter.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component Giving\WeaponComponentStand.cs" />
@@ -110,6 +112,7 @@
     <Compile Include="Assets\NavMesh Components\NavMeshModifier.cs" />
     <Compile Include="Assets\Scripts\Particle Scripts\HitMarker.cs" />
     <Compile Include="Assets\Scripts\Map Generation\RoomGenerationSet.cs" />
+    <Compile Include="Assets\Scripts\Speedrun Timer\SpeedrunTimer.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object Var\IntVariable.cs" />
     <Compile Include="Assets\Scripts\Player Movement\PlayerMovement.cs" />
@@ -117,9 +120,7 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\Speedrun Timer\SpeedrunTimer.cs" />
-    <Compile Include="Assets\Scripts\Scriptable Object Var\BoolVariable.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\SpeedrunTimerDisplay.cs" />
+    <Compile Include="Assets\Scripts\Speedrun Timer\SpeedrunTime.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
