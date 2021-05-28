@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Object Pooling\ObjectPoolType.cs" />
     <Compile Include="Assets\Scripts\Player Movement\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Enemy Behavior Scripts\Specific Enemy Behavior\ProjectileLaunchEnemy.cs" />
+    <Compile Include="Assets\Scripts\Speedrun Timer\SpeedrunTime.cs" />
     <Compile Include="Assets\Scripts\Enemy Spawning\EnemyWave.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Fun Weapon Components\GiveWeaponAmmoOnKill.cs" />
@@ -120,7 +121,7 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\Speedrun Timer\SpeedrunTime.cs" />
+    <Compile Include="Assets\Scripts\StartEvent.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

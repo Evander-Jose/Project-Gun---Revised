@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CursorDeLocker : MonoBehaviour
 {
-    private void Start()
+    public void LockCursor()
     {
         Cursor.lockState = CursorLockMode.Confined;
     }
