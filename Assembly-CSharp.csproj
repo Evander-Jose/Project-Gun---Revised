@@ -104,6 +104,7 @@
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Execution and Activation\WeaponComponentActivator.cs" />
     <Compile Include="Assets\Scripts\Item Drop System\DropItem.cs" />
     <Compile Include="Assets\Scripts\Scriptable Object Var\BoolVariable.cs" />
+    <Compile Include="Assets\Scripts\StartEvent.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component\Basic Weapon Components\RaycastShooter.cs" />
     <Compile Include="Assets\Scripts\Player Weapons System\Weapon Component Giving\WeaponComponentStand.cs" />
@@ -121,7 +122,7 @@
     <Compile Include="Assets\Scripts\Map Generation\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\IntVariableModifier.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\StartEvent.cs" />
+    <Compile Include="Assets\SpeedrunLeaderboard.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
